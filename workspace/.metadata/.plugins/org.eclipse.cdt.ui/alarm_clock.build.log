@@ -1,0 +1,80 @@
+21:45:57 **** Incremental Build of configuration Debug for project alarm_clock ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'MX_USB_PCD_Init' [-Wimplicit-function-declaration]
+  102 |   MX_USB_PCD_Init();
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:29: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+  128 |    signal[count] = volume * sin(2.0 * PI * f0 * t); // left
+      |                             ^~~
+../Core/Src/main.c:128:29: warning: incompatible implicit declaration of built-in function 'sin'
+../Core/Src/main.c:27:1: note: include '<math.h>' or provide a declaration of 'sin'
+   26 | #include "gpio.h"
+  +++ |+#include <math.h>
+   27 | 
+../Core/Src/main.c:133:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  133 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:29: warning: incompatible implicit declaration of built-in function 'sin'
+  140 |    signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
+      |                             ^~~
+../Core/Src/main.c:140:29: note: include '<math.h>' or provide a declaration of 'sin'
+../Core/Src/main.c:145:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  145 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:161:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  161 |    sprintf(time_msg, "\033[2K%02d:%02d:%02d\r", Time.Hours, Time.Minutes, Time.Seconds);
+      |    ^~~~~~~
+../Core/Src/main.c:161:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   27 | 
+../Core/Src/main.c:167:7: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+  167 |       set_time();
+      |       ^~~~~~~~
+../Core/Src/main.c:171:5: warning: implicit declaration of function 'set_alarm' [-Wimplicit-function-declaration]
+  171 |     set_alarm();
+      |     ^~~~~~~~~
+../Core/Src/main.c:181:5: warning: implicit declaration of function 'snooze_alarm' [-Wimplicit-function-declaration]
+  181 |     snooze_alarm();
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:111:11: warning: unused variable 'esc_message' [-Wunused-variable]
+  111 |   uint8_t esc_message[50] = {'\0'};
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "alarm_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\goldbh\Documents\GitHub\lab-9-hgoldb16\workspace\alarm_clock\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alarm_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alarm_clock.elf
+ 
+arm-none-eabi-size   alarm_clock.elf 
+arm-none-eabi-objdump -h -S  alarm_clock.elf  > "alarm_clock.list"
+arm-none-eabi-objcopy  -O binary  alarm_clock.elf  "alarm_clock.bin"
+   text	   data	    bss	    dec	    hex	filename
+  41936	    120	   2884	  44940	   af8c	alarm_clock.elf
+Finished building: default.size.stdout
+ 
+Finished building: alarm_clock.bin
+ 
+Finished building: alarm_clock.list
+ 
+
+21:45:59 Build Finished. 0 errors, 12 warnings. (took 1s.951ms)
+

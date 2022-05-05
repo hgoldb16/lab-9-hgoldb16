@@ -1,0 +1,3 @@
+clock_control.c:16:6:set_time	96	static
+clock_control.c:81:6:set_alarm	112	static
+clock_control.c:147:6:snooze_alarm	48	static

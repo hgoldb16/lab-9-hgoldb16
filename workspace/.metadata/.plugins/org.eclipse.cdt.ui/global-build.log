@@ -1,0 +1,416 @@
+21:28:05 **** Build of configuration Debug for project alarm_clock ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rtc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_sai_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.d" -MT"Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_ll_usb.o"
+arm-none-eabi-gcc "../Core/Src/clock_control.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/clock_control.d" -MT"Core/Src/clock_control.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/clock_control.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma.o"
+../Core/Src/clock_control.c: In function 'set_time':
+../Core/Src/clock_control.c:36:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   36 |   sprintf(msg, "%02d:%02d:%02d\r", (current_count>>2), new_time.Minutes, new_time.Seconds);
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+      |   ^~~~~~~
+../Core/Src/clock_control.c:36:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/clock_control.c:14:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   13 | #include "project_functions.h"
+  +++ |+#include <stdio.h>
+   14 | 
+../Core/Src/clock_control.c:36:20: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   36 |   sprintf(msg, "%02d:%02d:%02d\r", (current_count>>2), new_time.Minutes, new_time.Seconds);
+      |                 ~~~^               ~~~~~~~~~~~~~~~~~~
+      |                    |                             |
+      |                    int                           uint32_t {aka long unsigned int}
+      |                 %02ld
+../Core/Src/clock_control.c:54:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+   54 |   sprintf(msg, "%02d:%02d:%02d\r", new_time.Hours, (current_count>>2), new_time.Seconds);
+      |   ^~~~~~~
+../Core/Src/clock_control.c:54:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/clock_control.c:54:25: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   54 |   sprintf(msg, "%02d:%02d:%02d\r", new_time.Hours, (current_count>>2), new_time.Seconds);
+      |                      ~~~^                          ~~~~~~~~~~~~~~~~~~
+      |                         |                                        |
+      |                         int                                      uint32_t {aka long unsigned int}
+      |                      %02ld
+../Core/Src/clock_control.c:72:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+   72 |   sprintf(msg, "%02d:%02d:%02d\r", new_time.Hours, new_time.Minutes, (current_count>>2));
+      |   ^~~~~~~
+../Core/Src/clock_control.c:72:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/clock_control.c:72:30: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+   72 |   sprintf(msg, "%02d:%02d:%02d\r", new_time.Hours, new_time.Minutes, (current_count>>2));
+      |                           ~~~^                                       ~~~~~~~~~~~~~~~~~~
+      |                              |                                                     |
+      |                              int                                                   uint32_t {aka long unsigned int}
+      |                           %02ld
+../Core/Src/clock_control.c: In function 'set_alarm':
+../Core/Src/clock_control.c:100:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+  100 |   sprintf(msg, "%02d:%02d:%02d\r", (current_count>>2), new_alarm.AlarmTime.Minutes, new_alarm.AlarmTime.Seconds);
+      |   ^~~~~~~
+../Core/Src/clock_control.c:100:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/clock_control.c:100:20: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  100 |   sprintf(msg, "%02d:%02d:%02d\r", (current_count>>2), new_alarm.AlarmTime.Minutes, new_alarm.AlarmTime.Seconds);
+      |                 ~~~^               ~~~~~~~~~~~~~~~~~~
+      |                    |                             |
+      |                    int                           uint32_t {aka long unsigned int}
+      |                 %02ld
+../Core/Src/clock_control.c:118:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+  118 |   sprintf(msg, "%02d:%02d:%02d\r", new_alarm.AlarmTime.Hours, (current_count>>2), new_alarm.AlarmTime.Seconds);
+      |   ^~~~~~~
+../Core/Src/clock_control.c:118:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/clock_control.c:118:25: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  118 |   sprintf(msg, "%02d:%02d:%02d\r", new_alarm.AlarmTime.Hours, (current_count>>2), new_alarm.AlarmTime.Seconds);
+      |                      ~~~^                                     ~~~~~~~~~~~~~~~~~~
+      |                         |                                                   |
+      |                         int                                                 uint32_t {aka long unsigned int}
+      |                      %02ld
+../Core/Src/clock_control.c:136:3: warning: incompatible implicit declaration of built-in function 'sprintf'
+  136 |   sprintf(msg, "%02d:%02d:%02d\r", new_alarm.AlarmTime.Hours, new_alarm.AlarmTime.Minutes, (current_count>>2));
+      |   ^~~~~~~
+../Core/Src/clock_control.c:136:3: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/clock_control.c:136:30: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  136 |   sprintf(msg, "%02d:%02d:%02d\r", new_alarm.AlarmTime.Hours, new_alarm.AlarmTime.Minutes, (current_count>>2));
+      |                           ~~~^                                                             ~~~~~~~~~~~~~~~~~~
+      |                              |                                                                           |
+      |                              int                                                                         uint32_t {aka long unsigned int}
+      |                           %02ld
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/rtc.d" -MT"Core/Src/rtc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/rtc.o"
+arm-none-eabi-gcc "../Core/Src/sai.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sai.d" -MT"Core/Src/sai.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sai.o"
+arm-none-eabi-gcc "../Core/Src/stm32wbxx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32wbxx_hal_msp.d" -MT"Core/Src/stm32wbxx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32wbxx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'MX_USB_PCD_Init' [-Wimplicit-function-declaration]
+  102 |   MX_USB_PCD_Init();
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:29: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+  128 |    signal[count] = volume * sin(2.0 * PI * f0 * t); // left
+      |                             ^~~
+../Core/Src/main.c:128:29: warning: incompatible implicit declaration of built-in function 'sin'
+../Core/Src/main.c:27:1: note: include '<math.h>' or provide a declaration of 'sin'
+   26 | #include "gpio.h"
+  +++ |+#include <math.h>
+   27 | 
+../Core/Src/main.c:133:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  133 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:29: warning: incompatible implicit declaration of built-in function 'sin'
+  140 |    signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
+      |                             ^~~
+../Core/Src/main.c:140:29: note: include '<math.h>' or provide a declaration of 'sin'
+../Core/Src/main.c:145:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  145 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:161:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  161 |    sprintf(time_msg, "\033[2K%02d:%02d:%02d\r", Time.Hours, Time.Minutes, Time.Seconds);
+      |    ^~~~~~~
+../Core/Src/main.c:161:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   27 | 
+../Core/Src/main.c:167:7: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+  167 |       set_time();
+      |       ^~~~~~~~
+../Core/Src/main.c:171:5: warning: implicit declaration of function 'set_alarm' [-Wimplicit-function-declaration]
+  171 |     set_alarm();
+      |     ^~~~~~~~~
+../Core/Src/main.c:178:5: warning: implicit declaration of function 'snooze_alarm' [-Wimplicit-function-declaration]
+  178 |     snooze_alarm();
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:111:11: warning: unused variable 'esc_message' [-Wunused-variable]
+  111 |   uint8_t esc_message[50] = {'\0'};
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/stm32wbxx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32wbxx_it.d" -MT"Core/Src/stm32wbxx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32wbxx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32wbxx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32wbxx.d" -MT"Core/Src/system_stm32wbxx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32wbxx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc "../Core/Src/usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usb.d" -MT"Core/Src/usb.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usb.o"
+arm-none-eabi-gcc -o "alarm_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\goldbh\Documents\GitHub\lab-9-hgoldb16\workspace\alarm_clock\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alarm_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alarm_clock.elf
+ 
+arm-none-eabi-size   alarm_clock.elf 
+arm-none-eabi-objdump -h -S  alarm_clock.elf  > "alarm_clock.list"
+arm-none-eabi-objcopy  -O binary  alarm_clock.elf  "alarm_clock.bin"
+   text	   data	    bss	    dec	    hex	filename
+  41880	    120	   2884	  44884	   af54	alarm_clock.elf
+Finished building: default.size.stdout
+ 
+Finished building: alarm_clock.bin
+ 
+Finished building: alarm_clock.list
+ 
+21:28:38 **** Incremental Build of configuration Debug for project alarm_clock ****
+make -j4 all 
+arm-none-eabi-size   alarm_clock.elf 
+   text	   data	    bss	    dec	    hex	filename
+  41880	    120	   2884	  44884	   af54	alarm_clock.elf
+Finished building: default.size.stdout
+ 
+21:35:28 **** Incremental Build of configuration Debug for project alarm_clock ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'MX_USB_PCD_Init' [-Wimplicit-function-declaration]
+  102 |   MX_USB_PCD_Init();
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:29: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+  128 |    signal[count] = volume * sin(2.0 * PI * f0 * t); // left
+      |                             ^~~
+../Core/Src/main.c:128:29: warning: incompatible implicit declaration of built-in function 'sin'
+../Core/Src/main.c:27:1: note: include '<math.h>' or provide a declaration of 'sin'
+   26 | #include "gpio.h"
+  +++ |+#include <math.h>
+   27 | 
+../Core/Src/main.c:133:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  133 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:29: warning: incompatible implicit declaration of built-in function 'sin'
+  140 |    signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
+      |                             ^~~
+../Core/Src/main.c:140:29: note: include '<math.h>' or provide a declaration of 'sin'
+../Core/Src/main.c:145:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  145 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:161:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  161 |    sprintf(time_msg, "\033[2K%02d:%02d:%02d\r", Time.Hours, Time.Minutes, Time.Seconds);
+      |    ^~~~~~~
+../Core/Src/main.c:161:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   27 | 
+../Core/Src/main.c:167:7: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+  167 |       set_time();
+      |       ^~~~~~~~
+../Core/Src/main.c:171:5: warning: implicit declaration of function 'set_alarm' [-Wimplicit-function-declaration]
+  171 |     set_alarm();
+      |     ^~~~~~~~~
+../Core/Src/main.c:178:5: warning: implicit declaration of function 'snooze_alarm' [-Wimplicit-function-declaration]
+  178 |     snooze_alarm();
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:111:11: warning: unused variable 'esc_message' [-Wunused-variable]
+  111 |   uint8_t esc_message[50] = {'\0'};
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "alarm_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\goldbh\Documents\GitHub\lab-9-hgoldb16\workspace\alarm_clock\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alarm_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alarm_clock.elf
+ 
+arm-none-eabi-size   alarm_clock.elf 
+arm-none-eabi-objdump -h -S  alarm_clock.elf  > "alarm_clock.list"
+arm-none-eabi-objcopy  -O binary  alarm_clock.elf  "alarm_clock.bin"
+   text	   data	    bss	    dec	    hex	filename
+  41912	    120	   2884	  44916	   af74	alarm_clock.elf
+Finished building: default.size.stdout
+ 
+Finished building: alarm_clock.bin
+ 
+Finished building: alarm_clock.list
+ 
+21:45:15 **** Incremental Build of configuration Debug for project alarm_clock ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'MX_USB_PCD_Init' [-Wimplicit-function-declaration]
+  102 |   MX_USB_PCD_Init();
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:29: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+  128 |    signal[count] = volume * sin(2.0 * PI * f0 * t); // left
+      |                             ^~~
+../Core/Src/main.c:128:29: warning: incompatible implicit declaration of built-in function 'sin'
+../Core/Src/main.c:27:1: note: include '<math.h>' or provide a declaration of 'sin'
+   26 | #include "gpio.h"
+  +++ |+#include <math.h>
+   27 | 
+../Core/Src/main.c:133:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  133 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:29: warning: incompatible implicit declaration of built-in function 'sin'
+  140 |    signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
+      |                             ^~~
+../Core/Src/main.c:140:29: note: include '<math.h>' or provide a declaration of 'sin'
+../Core/Src/main.c:145:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  145 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:161:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  161 |    sprintf(time_msg, "\033[2K%02d:%02d:%02d\r", Time.Hours, Time.Minutes, Time.Seconds);
+      |    ^~~~~~~
+../Core/Src/main.c:161:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   27 | 
+../Core/Src/main.c:167:7: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+  167 |       set_time();
+      |       ^~~~~~~~
+../Core/Src/main.c:171:5: warning: implicit declaration of function 'set_alarm' [-Wimplicit-function-declaration]
+  171 |     set_alarm();
+      |     ^~~~~~~~~
+../Core/Src/main.c:181:5: warning: implicit declaration of function 'snooze_alarm' [-Wimplicit-function-declaration]
+  181 |     snooze_alarm();
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:111:11: warning: unused variable 'esc_message' [-Wunused-variable]
+  111 |   uint8_t esc_message[50] = {'\0'};
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "alarm_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\goldbh\Documents\GitHub\lab-9-hgoldb16\workspace\alarm_clock\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alarm_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alarm_clock.elf
+ 
+arm-none-eabi-size   alarm_clock.elf 
+arm-none-eabi-objdump -h -S  alarm_clock.elf  > "alarm_clock.list"
+arm-none-eabi-objcopy  -O binary  alarm_clock.elf  "alarm_clock.bin"
+   text	   data	    bss	    dec	    hex	filename
+  41936	    120	   2884	  44940	   af8c	alarm_clock.elf
+Finished building: default.size.stdout
+Finished building: alarm_clock.bin
+ 
+ 
+Finished building: alarm_clock.list
+ 
+21:45:57 **** Incremental Build of configuration Debug for project alarm_clock ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32WB55xx -c -I../Core/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc -I../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:3: warning: implicit declaration of function 'MX_USB_PCD_Init' [-Wimplicit-function-declaration]
+  102 |   MX_USB_PCD_Init();
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:29: warning: implicit declaration of function 'sin' [-Wimplicit-function-declaration]
+  128 |    signal[count] = volume * sin(2.0 * PI * f0 * t); // left
+      |                             ^~~
+../Core/Src/main.c:128:29: warning: incompatible implicit declaration of built-in function 'sin'
+../Core/Src/main.c:27:1: note: include '<math.h>' or provide a declaration of 'sin'
+   26 | #include "gpio.h"
+  +++ |+#include <math.h>
+   27 | 
+../Core/Src/main.c:133:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  133 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:140:29: warning: incompatible implicit declaration of built-in function 'sin'
+  140 |    signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
+      |                             ^~~
+../Core/Src/main.c:140:29: note: include '<math.h>' or provide a declaration of 'sin'
+../Core/Src/main.c:145:39: warning: passing argument 2 of 'HAL_SAI_Transmit_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  145 |   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+      |                                       ^~~~~~
+      |                                       |
+      |                                       int16_t * {aka short int *}
+In file included from ../Core/Inc/stm32wbxx_hal_conf.h:296,
+                 from ../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_sai.h:781:74: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int16_t *' {aka 'short int *'}
+  781 | HAL_StatusTypeDef HAL_SAI_Transmit_DMA(SAI_HandleTypeDef *hsai, uint8_t *pData, uint16_t Size);
+      |                                                                 ~~~~~~~~~^~~~~
+../Core/Src/main.c:161:4: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  161 |    sprintf(time_msg, "\033[2K%02d:%02d:%02d\r", Time.Hours, Time.Minutes, Time.Seconds);
+      |    ^~~~~~~
+../Core/Src/main.c:161:4: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:27:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   26 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   27 | 
+../Core/Src/main.c:167:7: warning: implicit declaration of function 'set_time' [-Wimplicit-function-declaration]
+  167 |       set_time();
+      |       ^~~~~~~~
+../Core/Src/main.c:171:5: warning: implicit declaration of function 'set_alarm' [-Wimplicit-function-declaration]
+  171 |     set_alarm();
+      |     ^~~~~~~~~
+../Core/Src/main.c:181:5: warning: implicit declaration of function 'snooze_alarm' [-Wimplicit-function-declaration]
+  181 |     snooze_alarm();
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:111:11: warning: unused variable 'esc_message' [-Wunused-variable]
+  111 |   uint8_t esc_message[50] = {'\0'};
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "alarm_clock.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\goldbh\Documents\GitHub\lab-9-hgoldb16\workspace\alarm_clock\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="alarm_clock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: alarm_clock.elf
+ 
+arm-none-eabi-size   alarm_clock.elf 
+arm-none-eabi-objdump -h -S  alarm_clock.elf  > "alarm_clock.list"
+arm-none-eabi-objcopy  -O binary  alarm_clock.elf  "alarm_clock.bin"
+   text	   data	    bss	    dec	    hex	filename
+  41936	    120	   2884	  44940	   af8c	alarm_clock.elf
+Finished building: default.size.stdout
+ 
+Finished building: alarm_clock.bin
+ 
+Finished building: alarm_clock.list
+ 
