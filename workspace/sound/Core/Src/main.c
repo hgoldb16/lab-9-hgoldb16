@@ -145,6 +145,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	   for (int k = 0; k < 8; k++) {
+	   t = 0;
+	   count = 0;
+	   while (count < numberOfSamples) {
+	   signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
+	   signal[count + 1] = signal[count]; // right
+	   count += 2;
+	   t += delta_t;
+	   }
+	   HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
+	   }
   }
   /* USER CODE END 3 */
 }

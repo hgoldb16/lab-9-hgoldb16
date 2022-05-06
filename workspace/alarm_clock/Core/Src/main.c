@@ -27,6 +27,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "project_functions.h"
 
 /* USER CODE END Includes */
 
@@ -112,13 +113,11 @@ int main(void)
   RTC_TimeTypeDef Time;
   RTC_DateTypeDef Date;
 
-  double dur = 1.0;
+  double dur = .5;
   double fs = 16000.0;
   double f0 = 261.63; // Middle C
   double delta_t = 1.0 / fs;
   double volume = 12000.0;
-  double c_scale[] = {261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25};
- // Frequencies corresponding to C scale: C4-D4-E4-F4-G4-A4-B4-C5
   int numberOfSamples = 2.0 * dur * fs; // 2 channels * duration (sec) * samples per sec
   int16_t signal[numberOfSamples];
   // Single tone
@@ -130,20 +129,7 @@ int main(void)
 	  count += 2;
 	  t += delta_t;
   }
-  HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
-  HAL_Delay(1000);
-  // Plays a "C" scale
-  for (int k = 0; k < 8; k++) {
-  t = 0;
-  count = 0;
-  while (count < numberOfSamples) {
-	  signal[count] = volume * sin(2.0 * PI * c_scale[k] * t); // left
-	  signal[count + 1] = signal[count]; // right
-	  count += 2;
-	  t += delta_t;
-  }
-  HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
-  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -172,6 +158,7 @@ int main(void)
 		  set_alarm_flag = 0;
 	  }
 	  if (alarm_triggered_flag){
+		  HAL_SAI_Transmit_DMA(&hsai_BlockA1, signal, numberOfSamples);
 		  if(Time.Seconds & 1)
 			  HAL_GPIO_WritePin(GPIOB,LD1_Pin,GPIO_PIN_SET);
 		  else

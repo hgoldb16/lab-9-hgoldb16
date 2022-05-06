@@ -33,7 +33,7 @@ void set_time(void){
 			current_count = 95;
 			TIM2->CNT = 95;
 		}
-		sprintf(msg, "%02d:%02d:%02d\r", (current_count>>2), new_time.Minutes, new_time.Seconds);
+		sprintf(msg, "%02d:%02d:%02d\r", (current_count), new_time.Minutes, new_time.Seconds);
 		HAL_UART_Transmit(&huart1, (uint8_t *)msg, sizeof(msg), 100);
 	}
 	new_time.Hours = current_count>>2;
