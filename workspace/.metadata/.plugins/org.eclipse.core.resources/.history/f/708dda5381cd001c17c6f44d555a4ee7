@@ -164,7 +164,7 @@ int main(void)
 		  else
 			  HAL_GPIO_WritePin(GPIOB,LD1_Pin,GPIO_PIN_RESET);
 	  }
-	  if (alarm_snooze_flag & alarm_triggered_flag){
+	  if (alarm_snooze_flag){
 		  snooze_alarm();
 		  HAL_GPIO_WritePin(GPIOB,LD1_Pin,GPIO_PIN_RESET);
 		  HAL_RTC_DeactivateAlarm(&hrtc, RTC_ALARM_A);

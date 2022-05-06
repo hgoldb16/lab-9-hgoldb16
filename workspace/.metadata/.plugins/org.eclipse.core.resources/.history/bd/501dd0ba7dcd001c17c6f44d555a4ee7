@@ -25,7 +25,7 @@ void set_time(void){
 	uint32_t current_count = TIM2->CNT;
 	while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4)){
 		current_count = TIM2->CNT;
-		if ((current_count <= 65536)&(current_count > 65000)){
+		if (((current_count <= 65536)&(current_count > 65000))|(current_count == 1)){
 	  		  current_count = 0;
 	  		  TIM2->CNT = 0;
 		}
@@ -33,7 +33,7 @@ void set_time(void){
 			current_count = 95;
 			TIM2->CNT = 95;
 		}
-		sprintf(msg, "%02d:%02d:%02d\r", (current_count>>2), new_time.Minutes, new_time.Seconds);
+		sprintf(msg, "%02d:%02d:%02d\r", (current_count), new_time.Minutes, new_time.Seconds);
 		HAL_UART_Transmit(&huart1, (uint8_t *)msg, sizeof(msg), 100);
 	}
 	new_time.Hours = current_count>>2;
@@ -43,7 +43,7 @@ void set_time(void){
 	current_count = TIM2->CNT;
 	while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4)){
 		current_count = TIM2->CNT;
-		if ((current_count <= 65536)&(current_count > 65000)){
+		if (((current_count <= 65536)&(current_count > 65000))|(current_count == 1)){
 	  		  current_count = 0;
 	  		  TIM2->CNT = 0;
 		}
@@ -61,7 +61,7 @@ void set_time(void){
 	current_count = TIM2->CNT;
 	while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4)){
 		current_count = TIM2->CNT;
-		if ((current_count <= 65536)&(current_count > 65000)){
+		if (((current_count <= 65536)&(current_count > 65000))|(current_count == 1)){
 	  		  current_count = 0;
 	  		  TIM2->CNT = 0;
 		}
@@ -89,7 +89,7 @@ void set_alarm(void){
 	uint32_t current_count = TIM2->CNT;
 	while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4)){
 		current_count = TIM2->CNT;
-		if ((current_count <= 65536)&(current_count > 65000)){
+		if (((current_count <= 65536)&(current_count > 65000))|(current_count == 1)){
 	  		  current_count = 0;
 	  		  TIM2->CNT = 0;
 		}
@@ -107,7 +107,7 @@ void set_alarm(void){
 	current_count = TIM2->CNT;
 	while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4)){
 		current_count = TIM2->CNT;
-		if ((current_count <= 65536)&(current_count > 65000)){
+		if (((current_count <= 65536)&(current_count > 65000))|(current_count == 1)){
 	  		  current_count = 0;
 	  		  TIM2->CNT = 0;
 		}
@@ -125,7 +125,7 @@ void set_alarm(void){
 	current_count = TIM2->CNT;
 	while (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4)){
 		current_count = TIM2->CNT;
-		if ((current_count <= 65536)&(current_count > 65000)){
+		if (((current_count <= 65536)&(current_count > 65000))|(current_count == 1)){
 	  		  current_count = 0;
 	  		  TIM2->CNT = 0;
 		}
