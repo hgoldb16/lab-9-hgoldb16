@@ -1,9 +1,7 @@
-# Laboratory XX
+# Laboratory 9
 
-Delete this line and replace the "XX" above with the Lab number.
-
-[Lab Report](report/lab_report.md)
+View video here: https://livejohnshopkins-my.sharepoint.com/:v:/g/personal/hgoldb16_jh_edu/EQfkU9sYGMVEp3_SwbLzb3wBAEuvevxYC5Jk2s39fb_ozw?e=BFQbZl 
 
 # Additional Notes
 
-Delete this line and place additional notes regarding this lab here.  If no additional notes, delete line and leave blank.
+
